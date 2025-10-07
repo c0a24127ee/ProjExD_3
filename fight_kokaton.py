@@ -149,7 +149,7 @@ class Score:
         """
         スコア表示の設定
         """
-        self.fonto = pg.font.SysFont("None", 30)
+        self.fonto = pg.font.SysFont(None, 30)
         self.color = (0, 0, 255)
         self.score = 0
         self.img = self.fonto.render("Score:", 0, self.color)  # 文字列Surfaceの生成
