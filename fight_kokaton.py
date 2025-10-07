@@ -149,14 +149,14 @@ class Score:
         """
         スコア表示の設定
         """
-        self.fonto = pg.font.SysFont("hgp創英角ポップ体", 30)
+        self.fonto = pg.font.SysFont("None", 30)
         self.color = (0, 0, 255)
         self.score = 0
-        self.img = self.fonto.render("スコア：", 0, self.color)  # 文字列Surfaceの生成
+        self.img = self.fonto.render("Score:", 0, self.color)  # 文字列Surfaceの生成
         self.rct = self.img.get_rect()
         self.rct.center = 100, HEIGHT - 50
     def update(self, screen: pg.Surface):
-        self.img = self.fonto.render(f"スコア：{self.score}", 0, self.color)  # スコア表示
+        self.img = self.fonto.render(f"Score:{self.score}", 0, self.color)  # スコア表示
         screen.blit(self.img, self.rct)
 
 
